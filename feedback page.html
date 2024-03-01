@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title>feedback - Bakery Store</title>
+    <style>
+      #contact_form {
+        background-color: #cfd3cb;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .row label{
+        color: #FFFFFF;
+        font-size: 18px;
+        margin-left: 10px;
+      }
+      input[type=text], textarea {
+        text-align: center;
+        background-color: #220202;
+        border-radius: 10px;
+        margin: auto 0;
+        color: black;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 70%;
+      }
+      #submit_button {
+        background-color: #105c7a;
+        border-radius: 10px;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contact_form">
+      <h1>We will be glad to get your feedback</h1>
+      <div class="row">
+        <label class="required" for="name">Your name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <span id="name_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="email">Your email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <span id="email_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="message">Your message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        <span id="message_validation" class="error_message"></span>
+      </div>
+      <input id="submit_button" type="submit" value="Send message" />
+    </div>
+  </body>
+</html>
